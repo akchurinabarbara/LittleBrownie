@@ -15,10 +15,12 @@ public class BrownieMovement : MonoBehaviour
 
     private IEnumerator Move(Vector3 target)
     {
+        target.z = transform.position.z;
+
         while (Vector3.Distance(transform.position, target) > 0.001f)
         {
             var step = _speed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, target, step);
+            transform.position = Vector3.MoveTowards(transform.position, target, step);
             yield return new WaitForEndOfFrame();
         }
     }
