@@ -1,17 +1,19 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class BrownieMovement : MonoBehaviour
 {
     [SerializeField]
     private float _speed;
 
-    private Vector2 _targetPosition;
+    private Vector2 _nextTargetPosition;
     private Coroutine _moveCoroutine;
+    private bool _isOutCameraMove = false;
 
     private CameraMovement _mainCameraMovementController;
 
-    private IEnumerator BrownieMove(Vector3 target)
+    private IEnumerator Move(Vector3 target)
     {
         while (Vector3.Distance(transform.position, target) > 0.001f)
         {
@@ -28,8 +30,8 @@ public class BrownieMovement : MonoBehaviour
             StopCoroutine(_moveCoroutine);
         }
 
-        _moveCoroutine = StartCoroutine(BrownieMove(target));
-    }
+        _moveCoroutine = StartCoroutine(Move(target));
+    }        
 
     private void Awake()
     {
@@ -38,23 +40,32 @@ public class BrownieMovement : MonoBehaviour
 
     private void Update()
     {
+        if (EventSystem.current.IsPointerOverGameObject()) { return; }
+
         if (Input.GetMouseButtonDown(0))
         {
-            _targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            _nextTargetPosition = new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, transform.position.y);
         }
 
-        //Домовенок не может двигаться, если камера в движении
-        if (Input.GetMouseButtonUp(0) && !_mainCameraMovementController.IsCameraMove)
+        //Если камера не двигалась и домовенок в ее пределах - двигаться к указанной точке
+        else if (Input.GetMouseButtonUp(0) && !_mainCameraMovementController.IsCameraMove)
         {
-            StartMove(new Vector2(_targetPosition.x, transform.position.y));
+            StartMove(_nextTargetPosition);
+        }
+
+        else if(_mainCameraMovementController.IsCameraMove && _isOutCameraMove)
+        {
+            StartMove(new Vector2(Camera.main.transform.position.x, transform.position.y));
         }
     }
 
     private void OnBecameInvisible()
     {
-        //Если домовенок находится за пределами видимости камеры - идет к новому расположени камеры
-        StartMove(new Vector2(Camera.main.transform.position.x, transform.position.y));
+        _isOutCameraMove = true;
     }
 
+    private void OnBecameVisible()
+    {
+        _isOutCameraMove = false;
+    }
 }
-
