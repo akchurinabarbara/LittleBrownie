@@ -7,6 +7,8 @@ public class Garbage : MonoBehaviour
 {
     [SerializeField]
     private float _removeTime;
+    [SerializeField]
+    private int _spendEnergy;
 
     public Action<Garbage> OnClick;
     public Action<Garbage> OnRemove;    
@@ -25,11 +27,9 @@ public class Garbage : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" && _isSelected && !_isDeleted)
         {
-            EnergyController energyController = collision.gameObject.GetComponent<EnergyController>();
-
-            if (energyController.CheckEnergy())
+            if (AppContext.EnergyManagare.Check())
             {
-                energyController.SpendEnergy();
+                AppContext.EnergyManagare.Spend(_spendEnergy);
                 OnRemove?.Invoke(this);
                 _isDeleted = true;
                 Destroy(gameObject, _removeTime);

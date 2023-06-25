@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+//передвижение домовенка
 public class BrownieMovement : MonoBehaviour
 {
     [SerializeField]
@@ -17,6 +18,7 @@ public class BrownieMovement : MonoBehaviour
     {
         target.z = transform.position.z;
 
+        //ƒвижемс€, пока не достигнем цели
         while (Vector3.Distance(transform.position, target) > 0.001f)
         {
             var step = _speed * Time.deltaTime;
@@ -42,8 +44,10 @@ public class BrownieMovement : MonoBehaviour
 
     private void Update()
     {
+        //не выполн€ть код, если нажатие происходит по интфейсу
         if (EventSystem.current.IsPointerOverGameObject()) { return; }
 
+        //”становить цель по курсору
         if (Input.GetMouseButtonDown(0))
         {
             _nextTargetPosition = new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, transform.position.y);

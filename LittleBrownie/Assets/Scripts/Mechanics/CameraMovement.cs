@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+//Движение камеры
 public class CameraMovement : MonoBehaviour
 {
     [SerializeField]
@@ -24,6 +25,7 @@ public class CameraMovement : MonoBehaviour
     {
         if (EventSystem.current.IsPointerOverGameObject()) { return; }
 
+        //Установить начальное положение курсора
         if (Input.GetMouseButtonDown(0))
         {
             _startMousePosition = _camera.ScreenToWorldPoint(Input.mousePosition);
@@ -33,6 +35,7 @@ public class CameraMovement : MonoBehaviour
 
         else if (Input.GetMouseButton(0))
         {
+            //Сдвигать камеру по разнице между начальным и текущим положением курсора
             float deltaX = _startMousePosition.x - _camera.ScreenToWorldPoint(Input.mousePosition).x;
 
             if (!deltaX.Equals(0))

@@ -105,6 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _removeTime: 1
+  _spendEnergy: 1
 --- !u!61 &1654706433210600572
 BoxCollider2D:
   m_ObjectHideFlags: 0

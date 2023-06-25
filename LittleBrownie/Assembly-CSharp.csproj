@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ScriptableObjects\Money.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Mesh Generation\SpineMesh.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\Animation.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
@@ -63,6 +64,7 @@
     <Compile Include="Assets\Spine\Runtime\spine-unity\Components\SkeletonMecanim.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\RegionlessAttachmentLoader.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\AnimationReferenceAsset.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\Collection.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\SpineAnimationState\SpineAnimationStateClip.cs" />
     <Compile Include="Assets\Scripts\Mechanics\Garbage.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Components\SkeletonAnimation.cs" />
@@ -78,6 +80,7 @@
     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonGraphic\BoneFollowerGraphic.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\RegionAttachment.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Components\SkeletonRenderer.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\EnergyGenerator.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\AttachmentLoader.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonGraphic\SkeletonGraphicMirror.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
@@ -87,6 +90,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\PathConstraint.cs" />
     <Compile Include="Assets\Scripts\UI\Screens\CollectionsScreenController.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\RewardGenerator.cs" />
+    <Compile Include="Assets\Scripts\AppContext.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonRenderSeparator\SkeletonRenderSeparator.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Components\BoneFollower.cs" />
@@ -102,6 +107,7 @@
     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\YieldInstructions\WaitForSpineTrackEntryEnd.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Components\PointFollower.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\Item.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\SkeletonUtility Modules\SkeletonUtilityGroundConstraint.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\Skeleton.cs" />
@@ -146,6 +152,8 @@
     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\PathAttachment.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\AttachmentType.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\CollectionItem.cs" />
+    <Compile Include="Assets\Scripts\Managers\MoneyManager.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\SlotData.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\BlendModeMaterialsAsset.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\ClippingAttachment.cs" />
@@ -155,15 +163,19 @@
     <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\SkeletonDataModifierAsset.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\Attachment.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+    <Compile Include="Assets\Scripts\Mechanics\Broom.cs" />
+    <Compile Include="Assets\Scripts\GameApplication.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\PathConstraintData.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\SkeletonDataAsset.cs" />
     <Compile Include="Assets\Scripts\Mechanics\BrownieMovement.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Asset Types\AtlasAssetBase.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+    <Compile Include="Assets\Scripts\Managers\EnergyManager.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\Skin.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\SkeletonUtility\SkeletonUtilityBone.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\InventoryItem.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Ragdoll\SkeletonRagdoll.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\AnimationMatchModifier\AnimationMatchModifierAsset.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\SpineSkeletonFlip\SpineSkeletonFlipTrack.cs" />
@@ -178,6 +190,7 @@
     <Compile Include="Assets\Spine\Runtime\spine-csharp\AnimationStateData.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\PointAttachment.cs" />
+    <Compile Include="Assets\Scripts\Managers\ChangeValue.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\Atlas.cs" />
@@ -191,8 +204,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\Timeline\SpineSkeletonFlip\SpineSkeletonFlipClip.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Modules\AttachmentTools\AttachmentTools.cs" />
-    <Compile Include="Assets\Scripts\GamePlay\EnergyController.cs" />
-    <Compile Include="Assets\Scripts\Mechanics\Broom.cs" />
+    <Compile Include="Assets\Scripts\Mechanics\Reward.cs" />
+    <Compile Include="Assets\Scripts\Common\Enums.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

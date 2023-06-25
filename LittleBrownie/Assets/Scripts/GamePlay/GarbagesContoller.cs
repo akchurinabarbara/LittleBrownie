@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Контроллер всего мусора
 public class GarbagesContoller : MonoBehaviour
 {
-
     [Header("Start Count")]
     [SerializeField]
     private int _maxStartCount;
@@ -29,6 +29,10 @@ public class GarbagesContoller : MonoBehaviour
     [SerializeField]
     private Vector3 _broomOffset;
 
+    [Header("RewarGenerator")]
+    [SerializeField]
+    private RewardGenerator _rewardGenerator;
+
     [Header("Garbage")]
     [SerializeField]
     private List<GameObject> _garbagePrefabs = null;
@@ -39,20 +43,28 @@ public class GarbagesContoller : MonoBehaviour
 
     private Coroutine _generateCoroutine;
 
+    //Удаление мусора
     private void OnRemoveGarbage(Garbage removeGarbage)
-    {      
-
+    {   
+        //Установка и показ метлы
         Broom newBroom = Instantiate(_broom, removeGarbage.transform.position + _broomOffset, Quaternion.identity, transform).GetComponent<Broom>();
         newBroom.SweepTime = removeGarbage.RemoveTime;
+
+        //Сгенерировать и показать награду
+        _rewardGenerator.StartGenerateReward(removeGarbage.RemoveTime, removeGarbage.transform.position);
+
+        //Удаление мусора
         _garbageList.Remove(removeGarbage);
     }
 
+    //Обратотка нажатия на мусор
     private void OnClickGarbage(Garbage newSelectedGarbage)
     {
         _selectedGarbage?.ResetSelection();
         _selectedGarbage = newSelectedGarbage;
     }
 
+    //Добавление нового мусора
     private void GenerateGarbage()
     {
         int garbageIndex = Random.Range(0, _garbagePrefabs.Count);
