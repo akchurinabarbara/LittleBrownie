@@ -2,6 +2,7 @@ using CommonTypes;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 
 //генератор награды
@@ -20,11 +21,11 @@ public class RewardGenerator : MonoBehaviour
     private List<Transform> _endPoints;
 
 
-    private Dictionary<ItemType, Action> _addReward = new Dictionary<ItemType, Action>
+    private Dictionary<ItemType, Action<Enum>> _addReward = new Dictionary<ItemType, Action<Enum>>
     {
-        [ItemType.money] = () => { AppContext.MoneyManager.Add(1); },
-        [ItemType.inventoryItem] = () => { AppContext.MoneyManager.Add(1); },
-        [ItemType.collectionItem] = () => { AppContext.MoneyManager.Add(1); }
+        [ItemType.money] = (Enum id) => { AppContext.MoneyManager.Add(1); },
+        [ItemType.inventoryItem] = (Enum id) => { AppContext.InventoryManager.Inventory[(InventoryItemID) id] += 1; },
+        [ItemType.collectionItem] = (Enum id) => { AppContext.MoneyManager.Add(1); }
     };
 
     private IEnumerator GenerateReward(float generateDelay, Vector3 startPosition)
@@ -37,8 +38,12 @@ public class RewardGenerator : MonoBehaviour
 
         Reward reward = Instantiate(_rewardObject, _mainUITransform).GetComponent<Reward>();
 
-        //Определяем конечную точку по типу
+        //Определяем конечную точку и ID предмета по типу
         Vector3 endPosition = _endPoints[(int)_rewardList[i].Type].position;
+
+        //Получить класс предмета, и, если в нем есть поле IDб получить его значение
+        FieldInfo fi = _rewardList[i].GetType().GetField("ID");
+        Enum id = (Enum)fi?.GetValue(_rewardList[i]);
 
         //Движение должно происходить на слое канваса
         startPosition.z = endPosition.z;
@@ -47,8 +52,11 @@ public class RewardGenerator : MonoBehaviour
         //чтобы объект двигался чисто по системе координат родителя и не зависил от глобаного положения камеры.
         reward.StartMoveAnimation(_rewardList[i].Icon, _mainUITransform.InverseTransformPoint(startPosition), _mainUITransform.InverseTransformPoint(endPosition));
 
-        //Записываем полученное значение
-        _addReward[_rewardList[i].Type]?.Invoke();
+        //Записываем полученное значение, если id != null
+        if (id != null)
+        {
+            _addReward[_rewardList[i].Type]?.Invoke(id);
+        }
     }
 
 public void  StartGenerateReward(float generateDelay, Vector3 startPosition)

@@ -7,6 +7,7 @@ public class BaseScreenController : MonoBehaviour
     [SerializeField]
     protected List<BaseScreenController> _nextScreens;
 
+    public virtual void Initialise() { }
     public virtual void SetInformation() { }
 
     public void ShowNext(int i)
@@ -17,6 +18,7 @@ public class BaseScreenController : MonoBehaviour
 
     public void Show()
     {
+        SetInformation();
         gameObject.SetActive(true);
     }
 

@@ -9,6 +9,7 @@ public class MoneyManager : ChangeValue<int>
 
     public MoneyManager()
     {
+        //TODO чтение данных из SQLLite
         CurrentValue = _startValue;
     }
 

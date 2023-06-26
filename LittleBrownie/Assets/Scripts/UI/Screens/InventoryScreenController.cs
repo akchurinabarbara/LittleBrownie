@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,13 +6,45 @@ public class InventoryScreenController : BaseScreenController
 {
     [SerializeField]
     private Button _exitButton;
-
     [SerializeField]
     private Button _okButton;
+    [SerializeField]
+    private Transform _itemCardParent;
+    [SerializeField]
+    private GameObject _itemCard;
+
+    private List<ItemCardController> _itemCardList = new List<ItemCardController>();
+
+    public override void Initialise()
+    {
+        base.Initialise();
+
+        for (int i = _itemCardList.Count; i < AppContext.InventoryManager.Inventory.Count; i++)
+        {
+            _itemCardList.Add(Instantiate(_itemCard, _itemCardParent).GetComponent<ItemCardController>());
+        }
+    }
 
     public override void SetInformation()
     {
         base.SetInformation();
+
+        int i = 0;
+
+        foreach(var item in AppContext.InventoryManager.Inventory)
+        {
+            if (item.Value > 0)
+            {
+                _itemCardList[i].SetInformation(null, item.Value, true);
+                _itemCardList[i].gameObject.SetActive(true);               
+            }
+            else
+            {
+                _itemCardList[i].gameObject.SetActive(false);
+            }
+
+            i++;
+        }
     }
 
     private void OnExitButtonClick()
