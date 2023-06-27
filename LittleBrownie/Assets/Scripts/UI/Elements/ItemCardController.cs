@@ -15,7 +15,6 @@ public class ItemCardController : MonoBehaviour
     [SerializeField]
     private Color _disableColor;
 
-
     public void SetInformation(Sprite icon, int count, bool enable)
     {
         _icon.sprite = icon;

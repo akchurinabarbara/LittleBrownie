@@ -228,7 +228,7 @@ MonoBehaviour:
   _icon: {fileID: 1534886524158233859}
   _countText: {fileID: 918777908403198430}
   _enableColor: {r: 1, g: 1, b: 1, a: 1}
-  _disableColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 1}
+  _disableColor: {r: 0.084905684, g: 0.084905684, b: 0.084905684, a: 1}
 --- !u!1 &7050971250029520831
 GameObject:
   m_ObjectHideFlags: 0

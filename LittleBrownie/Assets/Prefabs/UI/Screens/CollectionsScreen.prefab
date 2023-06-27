@@ -96,9 +96,6 @@ MonoBehaviour:
   _okButton: {fileID: 856609300244055613}
   _collectionsPanelParent: {fileID: 856609300262763355}
   _collectionPanel: {fileID: 9057670006624074212, guid: df7fbe6498149b84b8187beaf48b8f7a, type: 3}
-  _collectionList:
-  - {fileID: 11400000, guid: ecb51da2015ce094694ebd82cdcc8d33, type: 2}
-  - {fileID: 11400000, guid: 748ff7bfd37782b4089feaf8a46261a4, type: 2}
 --- !u!1001 &1657222662938447035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -122,6 +119,10 @@ PrefabInstance:
     - target: {fileID: 2097809523172915512, guid: d187a511feb2eb94084a9d700e83601f, type: 3}
       propertyPath: m_text
       value: Collections
+      objectReference: {fileID: 0}
+    - target: {fileID: 2097809523280404675, guid: d187a511feb2eb94084a9d700e83601f, type: 3}
+      propertyPath: m_VerticalScrollbarVisibility
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2097809524535750679, guid: d187a511feb2eb94084a9d700e83601f, type: 3}
       propertyPath: m_Size

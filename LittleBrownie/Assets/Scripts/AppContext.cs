@@ -8,11 +8,14 @@ public static class AppContext
     private static MoneyManager _moneyManager;
     private static InventoryManager _inventoryManager;
     private static CollectionManager _collectionManager;
+    private static ResourceManager _resourceManager;
 
     public static EnergyManager EnergyManagare {get { return _energyManager; }}
     public static MoneyManager MoneyManager { get { return _moneyManager;  } }
     public static InventoryManager InventoryManager { get { return _inventoryManager; } }
     public static CollectionManager CollectionManager { get { return _collectionManager; } }
+
+    public static ResourceManager ResourceManager { get { return _resourceManager; } }
 
 
     public static void Configure()
@@ -21,5 +24,6 @@ public static class AppContext
         _moneyManager = new MoneyManager();
         _inventoryManager = new InventoryManager();
         _collectionManager = new CollectionManager();
+        _resourceManager = new ResourceManager();
     }
 }

@@ -13,6 +13,7 @@ public class InventoryScreenController : BaseScreenController
     [SerializeField]
     private GameObject _itemCard;
 
+
     private List<ItemCardController> _itemCardList = new List<ItemCardController>();
 
     public override void Initialise()
@@ -35,7 +36,8 @@ public class InventoryScreenController : BaseScreenController
         {
             if (item.Value > 0)
             {
-                _itemCardList[i].SetInformation(null, item.Value, true);
+                Sprite icon = AppContext.ResourceManager.InventoryItemDescriptions[item.Key].Icon;
+                _itemCardList[i].SetInformation(icon, item.Value, true);
                 _itemCardList[i].gameObject.SetActive(true);               
             }
             else

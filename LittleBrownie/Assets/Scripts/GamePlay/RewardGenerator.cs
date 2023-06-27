@@ -25,7 +25,7 @@ public class RewardGenerator : MonoBehaviour
     {
         [ItemType.money] = (Enum id) => { AppContext.MoneyManager.Add(1); },
         [ItemType.inventoryItem] = (Enum id) => { AppContext.InventoryManager.Inventory[(InventoryItemID) id] += 1; },
-        [ItemType.collectionItem] = (Enum id) => { AppContext.MoneyManager.Add(1); }
+        [ItemType.collectionItem] = (Enum id) => { AppContext.CollectionManager.Collection[(CollectionItemID)id] += 1; }
     };
 
     private IEnumerator GenerateReward(float generateDelay, Vector3 startPosition)

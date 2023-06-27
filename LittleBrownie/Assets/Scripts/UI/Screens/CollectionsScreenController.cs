@@ -14,14 +14,34 @@ public class CollectionsScreenController : BaseScreenController
     [SerializeField]
     private GameObject _collectionPanel;
 
-    [SerializeField]
-    private List<Collection> _collectionList;
-
     private List<CollectionPanelController> _collectionPanelList = new List<CollectionPanelController>();
+
+    public override void Initialise()
+    {
+        base.Initialise();
+
+        foreach (var colection in AppContext.ResourceManager.CollectionDescriptions)
+        {
+            var collectionPanel = Instantiate(_collectionPanel, _collectionsPanelParent).GetComponent<CollectionPanelController>();
+
+            collectionPanel.OnGetReward += SetInformation;
+
+            _collectionPanelList.Add(collectionPanel);
+        }
+    }
 
     public override void SetInformation()
     {
         base.SetInformation();
+
+        var collections = AppContext.ResourceManager.CollectionDescriptions;
+
+        int i = 0;
+        foreach (var collection in collections)
+        {
+            _collectionPanelList[i].SetInformation(collection.Value);
+            i++;
+        }
     }
 
     private void OnExitButtonClick()
@@ -34,16 +54,6 @@ public class CollectionsScreenController : BaseScreenController
         ShowNext(0);
     }
 
-    private void Awake()
-    {
-        foreach(var colection in _collectionList)
-        {
-            var collectionPanel = Instantiate(_collectionPanel, _collectionsPanelParent).GetComponent<CollectionPanelController>();
-
-
-            _collectionPanelList.Add(collectionPanel);
-        }
-    }
 
     private void OnEnable()
     {
