@@ -8,4 +8,9 @@ public class GameApplication : MonoBehaviour
     {
         AppContext.Configure();
     }
+
+    private void OnDisable()
+    {
+        AppContext.Save();
+    }
 }

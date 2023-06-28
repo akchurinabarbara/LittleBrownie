@@ -27,7 +27,7 @@ public class CollectionPanelController : MonoBehaviour
         OnGetReward?.Invoke();
     }
 
-    public void SetInformation(Collection collection)
+    public void SetInformation(CollectionDescription collection)
     {
         _currentCollectionID = collection.ID;
 

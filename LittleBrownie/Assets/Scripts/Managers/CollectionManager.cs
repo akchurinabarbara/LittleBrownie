@@ -7,7 +7,10 @@ using UnityEngine;
 
 public class CollectionManager 
 {
+    private const int _startValue = 0;
+
     private Dictionary<CollectionItemID, int> _collection;
+    private DatabaseHandler _databaseHandler;
 
     private Dictionary<ItemType, Action<Enum, int>> _addReward = new Dictionary<ItemType, Action<Enum, int>>
     {
@@ -25,18 +28,34 @@ public class CollectionManager
         }
     }
 
-    public CollectionManager()
+    public CollectionManager(DatabaseHandler databaseHandler)
     {
         _collection = new Dictionary<CollectionItemID, int>();
 
-        foreach (CollectionItemID collectionItemID in Enum.GetValues(typeof(CollectionItemID)))
+        _databaseHandler = databaseHandler;
+
+        var collectionFromDB = _databaseHandler.GetCollection();
+
+        if (collectionFromDB.Count == 0)
         {
-            _collection[collectionItemID] = 0;
+            foreach (CollectionItemID collectionItemID in Enum.GetValues(typeof(CollectionItemID)))
+            {
+                _collection[collectionItemID] = _startValue;
+                _databaseHandler.AddCollection(collectionItemID, _startValue);
+
+            }
+        }
+        else
+        {
+            foreach (var collectionItem in collectionFromDB)
+            {
+                _collection[(CollectionItemID)collectionItem.CollectionItemID] = collectionItem.Count;
+            }
         }
     }
 
     //TODO перенести код получения награды сюда, когда будут ресурсы
-    public bool CheckAll(ItemWithID<CollectionItemID>[] items)
+    public bool CheckAll(ItemWithIDDescription<CollectionItemID>[] items)
     {
         bool result = true;
         foreach(var item in items)
@@ -70,6 +89,14 @@ public class CollectionManager
             {
                 _addReward[collection.reward.Type]?.Invoke(id, collection.count);
             }
+        }
+    }
+
+    public void Save()
+    {
+        foreach (var collection in _collection)
+        {
+            _databaseHandler.UpdateCollection(collection.Key, collection.Value);
         }
     }
 }

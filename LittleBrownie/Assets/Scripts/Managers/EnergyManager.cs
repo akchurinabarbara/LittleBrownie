@@ -7,9 +7,23 @@ public class EnergyManager : ChangeValue<int>
 {
     private const int _startValue = 10;
 
-    public EnergyManager()
+    private DatabaseHandler _databaseHandler;
+
+    public EnergyManager(DatabaseHandler databaseHandler)
     {
-        CurrentValue = _startValue;
+        _databaseHandler = databaseHandler;
+
+        var energyFromDB = _databaseHandler.GetEnergy();
+
+        if (energyFromDB.Count == 0)
+        {
+            CurrentValue = _startValue;
+            _databaseHandler.AddEnergy(_startValue);
+        }
+        else
+        {
+            CurrentValue = energyFromDB[0].count;
+        }
     }
 
     public override void Add(int addValue)
@@ -25,5 +39,10 @@ public class EnergyManager : ChangeValue<int>
     public override void Spend(int spendValue)
     {
         CurrentValue-= spendValue;
+    }
+
+    public void Save()
+    {
+        _databaseHandler.UpdateEnergy(CurrentValue);
     }
 }

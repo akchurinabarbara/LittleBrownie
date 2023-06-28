@@ -12,7 +12,7 @@ public class RewardGenerator : MonoBehaviour
     private GameObject _rewardObject;
 
     [SerializeField]
-    private List<Item> _rewardList = null;
+    private List<ItemDescription> _rewardList = null;
 
     [SerializeField]
     private Transform _mainUITransform;
