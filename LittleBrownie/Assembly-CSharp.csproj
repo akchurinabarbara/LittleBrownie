@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\ScriptableObjects\ItemWithIDDescription.cs" />
     <Compile Include="Assets\Scripts\GamePlay\EnergyGenerator.cs" />
     <Compile Include="Assets\Scripts\Mechanics\Reward.cs" />
+    <Compile Include="Assets\Scripts\DataBase\DatabaseHandler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\Scripts\Managers\DataBase.cs" />
     <Compile Include="Assets\Scripts\UI\Screens\InventoryScreenController.cs" />
@@ -116,6 +117,7 @@
     <Compile Include="Assets\Scripts\Managers\EnergyManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\InventoryItem.cs" />
+    <Compile Include="Assets\Scripts\DataBase\SQLite.cs" />
     <Compile Include="Assets\Scripts\UI\Screens\BaseScreenController.cs" />
     <Compile Include="Assets\Scripts\DataBase\ORM\Collection.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
@@ -126,11 +128,10 @@
     <Compile Include="Assets\Scripts\DataBase\ORM\Money.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-    <Compile Include="Assets\Scripts\DataBase\SQLite.cs" />
-    <Compile Include="Assets\Scripts\DataBase\DatabaseHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\Spine\version.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
@@ -835,9 +836,6 @@
     <Reference Include="Unity.Addressables.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Addressables.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="spine-csharp">
-      <HintPath>Library\ScriptAssemblies\spine-csharp.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.2D.Common.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
@@ -852,9 +850,6 @@
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="spine-unity">
-      <HintPath>Library\ScriptAssemblies\spine-unity.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
@@ -913,9 +908,6 @@
     <Reference Include="Unity.2D.SpriteShape.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="spine-unity-editor">
-      <HintPath>Library\ScriptAssemblies\spine-unity-editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.ScriptableBuildPipeline.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
     </Reference>
@@ -927,6 +919,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="spine-unity.csproj">
+      <Project>{1E6E399E-6665-66D2-29E8-F5D2A89E38D1}</Project>
+      <Name>spine-unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="spine-unity-editor.csproj">
+      <Project>{C68EA7E8-AEB3-F626-F015-A5C4D9B89419}</Project>
+      <Name>spine-unity-editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

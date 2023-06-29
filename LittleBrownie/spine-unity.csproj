@@ -126,6 +126,7 @@
     <Compile Include="Assets\Spine\Runtime\spine-csharp\SlotData.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\VertexAttachment.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\ClippingAttachment.cs" />
+    <Compile Include="Assets\Spine\Runtime\spine-csharp\Animation.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\EventData.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\BlendMode.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\AtlasAttachmentLoader.cs" />
@@ -135,8 +136,8 @@
     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\MeshAttachment.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\SkeletonClipping.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\RegionAttachment.cs" />
-    <Compile Include="Assets\Spine\Runtime\spine-csharp\BoneData.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\Skeleton.cs" />
+    <Compile Include="Assets\Spine\Runtime\spine-csharp\BoneData.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\BoundingBoxAttachment.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-unity\Utility\SkinUtilities.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\SkeletonBinary.cs" />
@@ -146,12 +147,12 @@
     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\AttachmentLoader.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\PathConstraint.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\Event.cs" />
-    <Compile Include="Assets\Spine\Runtime\spine-csharp\MathUtils.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\Attachment.cs" />
+    <Compile Include="Assets\Spine\Runtime\spine-csharp\MathUtils.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\Attachments\PointAttachment.cs" />
+    <Compile Include="Assets\Spine\Runtime\spine-csharp\SkeletonData.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\SkeletonJson.cs" />
     <Compile Include="Assets\Spine\Runtime\spine-csharp\IUpdatable.cs" />
-    <Compile Include="Assets\Spine\Runtime\spine-csharp\SkeletonData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Spine\Runtime\spine-unity\Shaders\Outline\Spine-Skeleton-Lit-Outline.shader" />
