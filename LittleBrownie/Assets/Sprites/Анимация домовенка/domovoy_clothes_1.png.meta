@@ -1,0 +1,1302 @@
+fileFormatVersion: 2
+guid: 40d86505b54281846a9e46f407e0fbc7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: -0.5
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boyar/boyar_body
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 116
+        width: 107
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22da67abe83441f40800000000000000
+      internalID: 5698253708823276834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar/boyar_bottom
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 154
+        width: 89
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba3b21d175c3ae0b0800000000000000
+      internalID: -5698676033636355157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar/boyar_cloak_front
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 148
+        width: 118
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4c3c7498751a0470800000000000000
+      internalID: 8361519265798175818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar/boyar_foot_left
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 244
+        width: 46
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8341c25ea4112d20800000000000000
+      internalID: 3251903144883471247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar/boyar_foot_right
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 188
+        width: 46
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ab934ec896bf5750800000000000000
+      internalID: 6295951571499064232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar/boyar_hand_left_1
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 192
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 430d0fc461c80fd60800000000000000
+      internalID: 7921985771952721972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar/boyar_hand_left_2
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 120
+        width: 43
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06010bdf9c3097080800000000000000
+      internalID: -9189309398593302432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar/boyar_hand_right_1
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 223
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c69aad33eb4d4630800000000000000
+      internalID: 3912867090619078341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar/boyar_hand_right_2
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 96
+        width: 44
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e1ad8c208f5534d0800000000000000
+      internalID: -3155510959795232280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar/boyar_hat
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 2
+        width: 230
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b2a2052a9b18760800000000000000
+      internalID: 7458446564683033454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar/boyar_leg_left_1
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 225
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04b657fbcaeb9d300800000000000000
+      internalID: 277462501215791936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar/boyar_leg_left_2
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 167
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d747d23ac6b3e580800000000000000
+      internalID: -8798988267399198766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar/boyar_leg_right_1
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 178
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 845f37656b15d61d0800000000000000
+      internalID: -3355936303744813752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar/boyar_leg_right_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 218
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 683250634f9812170800000000000000
+      internalID: 8151948482488640390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar/boyrin_cloak_behind
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 2
+        width: 167
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f9e88486bdf6a650800000000000000
+      internalID: 6243956893745211893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar_girl/boyar_girl_body
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 2
+        width: 108
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 141441b806d6a5b40800000000000000
+      internalID: 5429772562166202689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar_girl/boyar_girl_bottom
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 192
+        width: 89
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 577530916665f7fc0800000000000000
+      internalID: -3494979789309913227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar_girl/boyar_girl_cloak_front
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 192
+        width: 121
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d0f8789e08b47750800000000000000
+      internalID: 6301864151425282256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar_girl/boyar_girl_colts
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 2
+        width: 269
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7174f4369d743e20800000000000000
+      internalID: 3329424108620640634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar_girl/boyar_girl_foot_left
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 243
+        width: 46
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8247ffbe1328518a0800000000000000
+      internalID: -6335014149902339032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar_girl/boyar_girl_foot_right
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 204
+        width: 45
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28964855379088960800000000000000
+      internalID: 7604338361775712642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar_girl/boyar_girl_hand_left_1
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 145
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcdec219598b621c0800000000000000
+      internalID: -4528729422749176371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar_girl/boyar_girl_hand_left_2
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 137
+        width: 43
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e9b9afd34b6c8ba0800000000000000
+      internalID: -6085371057224959515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar_girl/boyar_girl_hand_right_1
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 223
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f41c18977ae45b220800000000000000
+      internalID: 2500991649279230287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar_girl/boyar_girl_hand_right_2
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 201
+        width: 46
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab2a3f79715ff930800000000000000
+      internalID: 4179148561490520999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar_girl/boyar_girl_leg_left_1
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 218
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca1185d82040dba0800000000000000
+      internalID: -6066278153943180602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar_girl/boyar_girl_leg_left_2
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 218
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a09e500cc220d82b0800000000000000
+      internalID: -5580801972018747126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar_girl/boyar_girl_leg_right_1
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 214
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf0416749425c7990800000000000000
+      internalID: -7386938814110809860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boyar_girl/boyar_girl_leg_right_2
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 218
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d72cf1549a7f3b7b0800000000000000
+      internalID: -5209548037556288899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: domovoy_cheek_left
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 210
+        width: 66
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69a7fff79966f1420800000000000000
+      internalID: 2602911919106914966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: domovoy_cheek_right
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 165
+        width: 59
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ced6b4b61b0b77530800000000000000
+      internalID: 3852742282294554092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: domovoy_eye_left
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 205
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 860a9755d84b23ef0800000000000000
+      internalID: -129842920122900376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: domovoy_eye_right
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 165
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e67d9240cfe211890800000000000000
+      internalID: -7489153045403936914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: domovoy_eyebrow_left
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 201
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a57b8627e7a1c3a0800000000000000
+      internalID: -6646846963796183642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: domovoy_eyebrow_right
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 229
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a6be4efb4523b0c0800000000000000
+      internalID: -4561260989276834137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: domovoy_head
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 2
+        width: 206
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 422986bd7e5550210800000000000000
+      internalID: 1298538521873125924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: domovoy_hear
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 262
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0106494cbb6611ce0800000000000000
+      internalID: -1436253849511501808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: domovoy_mouth
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 226
+        width: 48
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81a2e7716400d3270800000000000000
+      internalID: 8231735994944989720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: domovoy_nose
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 138
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af5ed9a6e195784e0800000000000000
+      internalID: -1979515524033419782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: domovoy_pupil_left
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 235
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e6909dbfb39dd00800000000000000
+      internalID: 997894745303379556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: domovoy_pupil_right
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 235
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 306ffb75be5c25b90800000000000000
+      internalID: -7254518435160263165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kusya/domovoy_bast_shoes_left
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 239
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 494927fcd342ebbb0800000000000000
+      internalID: -4918453895150005100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kusya/domovoy_bast_shoes_right
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 239
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e43a23929126de0800000000000000
+      internalID: -1341482074269069675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kusya/domovoy_body_red
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 148
+        width: 103
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89196000700577770800000000000000
+      internalID: 8608437203737416088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kusya/domovoy_bottom_grey
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 119
+        width: 91
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d68515ccd79ee860800000000000000
+      internalID: 7561147798856763097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kusya/domovoy_hand_red_left_1
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 145
+        width: 48
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de0eec678d574e00800000000000000
+      internalID: 1028893876106956504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kusya/domovoy_hand_red_left_2
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 119
+        width: 43
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1074172fdb5482130800000000000000
+      internalID: 3542157789045540609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kusya/domovoy_hand_red_right_1
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 183
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af6ad58bc661dc860800000000000000
+      internalID: 7551716806375614202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kusya/domovoy_hand_red_right_2
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 96
+        width: 44
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44c8687b48a728e20800000000000000
+      internalID: 3351375783150390340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kusya/domovoy_leg_grey_left_1
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 156
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56a2c564139d8b530800000000000000
+      internalID: 3871082685382011493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kusya/domovoy_leg_grey_left_2
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 184
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c28ba06530335b80800000000000000
+      internalID: -8407323073557331262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kusya/domovoy_leg_grey_right_1
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 218
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 867f3df46209b7230800000000000000
+      internalID: 3637659618254255976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kusya/domovoy_leg_grey_right_2
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 184
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48d26c25eca43ea10800000000000000
+      internalID: 1937474514711883140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      boyar_girl/boyar_girl_hand_right_1: 2500991649279230287
+      kusya/domovoy_hand_red_left_1: 1028893876106956504
+      boyar_girl/boyar_girl_hand_left_2: -6085371057224959515
+      boyar_girl/boyar_girl_cloak_front: 6301864151425282256
+      domovoy_nose: -1979515524033419782
+      kusya/domovoy_hand_red_right_1: 7551716806375614202
+      boyar/boyar_leg_right_2: 8151948482488640390
+      boyar_girl/boyar_girl_foot_right: 7604338361775712642
+      kusya/domovoy_hand_red_left_2: 3542157789045540609
+      boyar/boyar_foot_right: 6295951571499064232
+      kusya/domovoy_leg_grey_left_1: 3871082685382011493
+      boyar/boyar_cloak_front: 8361519265798175818
+      boyar/boyar_body: 5698253708823276834
+      boyar/boyar_hand_right_2: -3155510959795232280
+      boyar_girl/boyar_girl_hand_left_1: -4528729422749176371
+      domovoy_cheek_right: 3852742282294554092
+      boyar/boyar_foot_left: 3251903144883471247
+      boyar/boyar_leg_right_1: -3355936303744813752
+      boyar_girl/boyar_girl_hand_right_2: 4179148561490520999
+      boyar_girl/boyar_girl_colts: 3329424108620640634
+      domovoy_cheek_left: 2602911919106914966
+      domovoy_head: 1298538521873125924
+      kusya/domovoy_bast_shoes_left: -4918453895150005100
+      domovoy_mouth: 8231735994944989720
+      kusya/domovoy_hand_red_right_2: 3351375783150390340
+      boyar_girl/boyar_girl_body: 5429772562166202689
+      kusya/domovoy_leg_grey_right_2: 1937474514711883140
+      boyar/boyar_leg_left_2: -8798988267399198766
+      domovoy_hear: -1436253849511501808
+      boyar_girl/boyar_girl_bottom: -3494979789309913227
+      boyar/boyar_leg_left_1: 277462501215791936
+      boyar_girl/boyar_girl_leg_right_1: -7386938814110809860
+      boyar/boyar_hand_right_1: 3912867090619078341
+      kusya/domovoy_leg_grey_left_2: -8407323073557331262
+      domovoy_eyebrow_right: -4561260989276834137
+      boyar/boyrin_cloak_behind: 6243956893745211893
+      boyar/boyar_hat: 7458446564683033454
+      boyar_girl/boyar_girl_leg_left_1: -6066278153943180602
+      boyar/boyar_hand_left_2: -9189309398593302432
+      domovoy_eye_right: -7489153045403936914
+      boyar_girl/boyar_girl_leg_left_2: -5580801972018747126
+      boyar_girl/boyar_girl_leg_right_2: -5209548037556288899
+      boyar_girl/boyar_girl_foot_left: -6335014149902339032
+      kusya/domovoy_leg_grey_right_1: 3637659618254255976
+      kusya/domovoy_bottom_grey: 7561147798856763097
+      boyar/boyar_hand_left_1: 7921985771952721972
+      domovoy_eyebrow_left: -6646846963796183642
+      kusya/domovoy_body_red: 8608437203737416088
+      boyar/boyar_bottom: -5698676033636355157
+      domovoy_pupil_right: -7254518435160263165
+      kusya/domovoy_bast_shoes_right: -1341482074269069675
+      domovoy_eye_left: -129842920122900376
+      domovoy_pupil_left: 997894745303379556
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
